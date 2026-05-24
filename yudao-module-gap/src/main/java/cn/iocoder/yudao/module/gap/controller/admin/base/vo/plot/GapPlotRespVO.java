@@ -1,0 +1,18 @@
+package cn.iocoder.yudao.module.gap.controller.admin.base.vo.plot;
+
+import cn.idev.excel.annotation.ExcelIgnoreUnannotated;
+import cn.idev.excel.annotation.ExcelProperty;
+import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+
+@Schema(description = "管理后台 - GAP 地块管理 Response VO")
+@Data
+@ExcelIgnoreUnannotated
+public class GapPlotRespVO {
+
+    @Schema(description = "创建时间")
+    @ExcelProperty("创建时间")
+    private LocalDateTime createTime;
+}
